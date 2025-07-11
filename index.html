@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Book Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Recipe Book</h1>
+
+ <form id="recipeForm">
+  <label for="name">Recipe Name:</label>
+  <input type="text" id="title" placeholder="Recipe Title" required />
+
+  <label for="name">Ingredients:</label>
+  <input type="text" id="ingredients" placeholder="Ingredients" required />
+
+  <label for="name">Instructions:</label>
+  <textarea id="instructions" placeholder="Instructions" required></textarea>
+
+  <label for="image">Image URL:</label>
+  <input type="url" id="image" placeholder="Paste image URL" required />
+
+  <label for="name">Cuisines:</label>
+  <select id="cuisine" required>
+    <option value="">Select Cuisine</option>
+    <option>Indian</option>
+    <option>Chinese</option>
+    <option>Italian</option>
+    <option>Mexican</option>
+  </select>
+
+  <button type="submit">Add Recipe</button>
+</form>
+
+  <div>
+    <input type="text" id="searchInput" placeholder="Search by title or ingredients" />
+    <select id="filterCuisine">
+      <option value="">All Cuisines</option>
+      <option>Indian</option>
+      <option>Chinese</option>
+      <option>Italian</option>
+      <option>Mexican</option>
+    </select>
+  </div>
+
+  <div id="recipeList"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
